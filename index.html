@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Auto Smile Selfie</title>
+<style>
+body{
+text-align:center;
+font-family:Arial;
+background:#111;
+color:white;
+}
+
+video{
+width:400px;
+border-radius:10px;
+margin-top:20px;
+}
+
+canvas{
+display:none;
+}
+
+button{
+padding:10px 20px;
+font-size:18px;
+margin-top:20px;
+} </style>
+
+</head>
+
+<body>
+
+<h1>Auto Capture Selfie 😁</h1>
+
+<video id="video" autoplay></video> <br> <button onclick="startCamera()">Start Camera</button>
+
+<canvas id="canvas"></canvas>
+
+<script src="script.js"></script>
+
+</body>
+</html>
