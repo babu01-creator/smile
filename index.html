@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-<title>Auto Smile Selfie</title>
+<title>AI Smile Selfie</title>
+
 <style>
+
 body{
+background:black;
+color:white;
 text-align:center;
 font-family:Arial;
-background:#111;
-color:white;
 }
 
 video{
-width:400px;
+width:420px;
 border-radius:10px;
 margin-top:20px;
 }
@@ -21,21 +22,21 @@ canvas{
 display:none;
 }
 
-button{
-padding:10px 20px;
-font-size:18px;
-margin-top:20px;
-} </style>
+</style>
 
 </head>
 
 <body>
 
-<h1>Auto Capture Selfie 😁</h1>
+<h1>AI Smile Selfie Camera 😁</h1>
 
-<video id="video" autoplay></video> <br> <button onclick="startCamera()">Start Camera</button>
-
+<video id="video" autoplay></video>
 <canvas id="canvas"></canvas>
+
+<p id="status">Detecting face...</p>
+
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
 
 <script src="script.js"></script>
 
